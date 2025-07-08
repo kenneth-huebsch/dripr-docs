@@ -1,0 +1,7 @@
+- send developer docs for local market data
+- mock API responses
+- improve email readability on mobile and implement Peter's feedback
+- track open rate
+- improvement to search radius
+- pagination for leads
+- quarterly activity report for agents
