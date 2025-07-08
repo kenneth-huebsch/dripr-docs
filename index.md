@@ -8,6 +8,5 @@ title: Home
 This is your documentation homepage. Add your project overview, quick start guide, or navigation here.
 
 ## Quick Links
-- [Getting Started](getting-started.html)
+- [Roadmap](roadmap.md)
 - [API Reference](api-reference.html)
-- [Examples](examples.html)
