@@ -9,4 +9,4 @@ This is your documentation homepage. Add your project overview, quick start guid
 
 ## Quick Links
 - [Roadmap](roadmap.md)
-- [API Reference](api-reference.html)
+- [API Reference](api-reference.md)
