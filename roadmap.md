@@ -1,7 +1,18 @@
-- send developer docs for local market data
-- mock API responses
-- improve email readability on mobile and implement Peter's feedback
-- track open rate
-- improvement to search radius
-- pagination for leads
-- quarterly activity report for agents
+# Best Agent Today Roadmap
+- [x] (July 8) Send developer docs for local market data API
+- [ ] (July 18) Improve email readability on mobile and implement Peter's feedback
+- [ ] (July 31) Track open rate
+- [ ] (August 15) Improvement to search radius algorithm
+- [ ] (August 29) Quarterly activity report for agents
+
+# Internal Roadmap
+- [ ] Pagination for leads page
+- [ ] Handle faults mid FETCHING that get stuck
+- [ ] Cron job to clean up local market datas after 1 month
+- [ ] Display reason if a campaign fails because somebody else already has a campaign for this property
+- [ ] Search for campaigns
+- [ ] Display error details in client
+- [ ] Status icons on details page
+- [ ] Don't allow to, from, or bcc address to be the same
+- [ ] Campaign details needs a refresh
+- [ ] Tooltips
