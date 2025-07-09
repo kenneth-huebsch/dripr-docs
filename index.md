@@ -3,9 +3,7 @@ layout: home
 title: Home
 ---
 
-# Welcome to Your Developer Docs
-
-This is your documentation homepage. Add your project overview, quick start guide, or navigation here.
+Welcome to the documentation site for [Dripr.ai](https://www.dripr.ai/).
 
 ## Quick Links
 - [Roadmap](roadmap.html)
