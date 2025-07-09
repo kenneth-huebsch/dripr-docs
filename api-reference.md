@@ -1,7 +1,6 @@
 ---
 layout: page
 title: API Reference
-permalink: /api-reference/
 ---
 
 # Local Market Data API
