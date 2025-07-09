@@ -1,3 +1,8 @@
+---
+layout: page
+title: Roadmap
+---
+
 # Best Agent Today Roadmap
 - [x] (July 8) Send developer docs for local market data API
 - [ ] (July 18) Improve email readability on mobile and implement Peter's feedback
