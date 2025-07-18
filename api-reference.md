@@ -32,7 +32,7 @@ X-API-Key: your_api_key_here
 ### Example Request
 
 ```bash
-curl -X GET "https://your-api-domain.com/api/local-market-data/90210" \
+curl -X GET "https://api.dripr.ai/api/local-market-data/90210" \
   -H "X-API-Key: your_api_key_here" \
   -H "Content-Type: application/json"
 ```
@@ -136,76 +136,6 @@ The API provides both current market data ("new" fields) and historical data fro
 ## Rate Limits
 
 Please contact your API provider for current rate limit information.
-
-## Example Usage
-
-### JavaScript/Node.js
-
-```javascript
-const response = await fetch('https://your-api-domain.com/api/local-market-data/90210', {
-  method: 'GET',
-  headers: {
-    'X-API-Key': 'your_api_key_here',
-    'Content-Type': 'application/json'
-  }
-});
-
-if (response.ok) {
-  const marketData = await response.json();
-  
-  // Calculate price change percentage
-  const priceChange = ((marketData.new_average_price - marketData.old_average_price) / marketData.old_average_price) * 100;
-  console.log(`Price change over 3 months: ${priceChange.toFixed(2)}%`);
-  
-  console.log('Market data:', marketData);
-} else {
-  const error = await response.json();
-  console.error('Error:', error.error);
-}
-```
-
-### Python
-
-```python
-import requests
-
-url = "https://your-api-domain.com/api/local-market-data/90210"
-headers = {
-    "X-API-Key": "your_api_key_here",
-    "Content-Type": "application/json"
-}
-
-response = requests.get(url, headers=headers)
-
-if response.status_code == 200:
-    market_data = response.json()
-    
-    # Calculate market trends
-    new_price = float(market_data['new_average_price'])
-    old_price = float(market_data['old_average_price'])
-    price_change_pct = ((new_price - old_price) / old_price) * 100
-    
-    print(f"Current average price: ${new_price:,.0f}")
-    print(f"Price 3 months ago: ${old_price:,.0f}")
-    print(f"Price change: {price_change_pct:.2f}%")
-    
-else:
-    error = response.json()
-    print("Error:", error["error"])
-```
-
-### cURL
-
-```bash
-# Basic request
-curl -X GET "https://your-api-domain.com/api/local-market-data/90210" \
-  -H "X-API-Key: your_api_key_here"
-
-# With verbose output for debugging
-curl -v -X GET "https://your-api-domain.com/api/local-market-data/90210" \
-  -H "X-API-Key: your_api_key_here" \
-  -H "Content-Type: application/json"
-```
 
 ## Notes
 
