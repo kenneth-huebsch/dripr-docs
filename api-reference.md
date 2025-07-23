@@ -50,11 +50,13 @@ Returns a JSON object containing local market data comparing current market cond
     "new_average_days_on_market": "38.83",
     "new_average_price": "1378585",
     "new_average_price_per_sqft": "623.75",
+    "new_interest_rate": 6.75,
     "new_month": "06-11-2025",
     "new_total_listings": "115",
     "old_average_days_on_market": "38.44",
     "old_average_price": "1293331",
     "old_average_price_per_sqft": "626.58",
+    "old_interest_rate": 6.62,
     "old_month": "04-01-2025",
     "old_total_listings": "100",
     "zip_code": "01950"
@@ -73,12 +75,14 @@ Returns a JSON object containing local market data comparing current market cond
 | `new_average_price` | string | Current average home price in the zip code |
 | `new_average_price_per_sqft` | string | Current average price per square foot |
 | `new_average_days_on_market` | string | Current average number of days homes stay on the market |
+| `new_interest_rate` | float | Current interest rate |
 | `new_total_listings` | string | Current total number of active listings |
 | **Historical Market Data (Old Fields - 3 Months Ago)** |
 | `old_month` | string | Date representing the historical market data period (3 months prior) |
 | `old_average_price` | string | Average home price from 3 months ago |
 | `old_average_price_per_sqft` | string | Average price per square foot from 3 months ago |
 | `old_average_days_on_market` | string | Average days on market from 3 months ago |
+| `new_interest_rate` | float | Interest rate from 3 months ago |
 | `old_total_listings` | string | Total number of active listings from 3 months ago |
 
 ### Data Interpretation
