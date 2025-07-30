@@ -6,9 +6,10 @@ title: Roadmap
 # Best Agent Today Roadmap
 - [x] (July 8) Send developer docs for local market data API
 - [x] (July 18) Improve email readability on mobile and implement Peter's feedback
-- [ ] (July 31) Track open rate
-- [ ] (August 15) Improvement to search radius algorithm
-- [ ] (August 29) Quarterly activity report for agents
+- [X] (July 31) Track open rate
+- [ ] (August 15) Email Feedback
+- [ ] (August 29) Improvement to search radius algorithm
+- [ ] (September 13) Quarterly activity report for agents
 
 # Internal Roadmap
 - [ ] Pagination for leads page
