@@ -1,0 +1,15 @@
+# Main navigation structure for Dripr documentation
+
+main:
+  - title: "API Reference"
+    url: /api/
+    children:
+      - title: "Version 1"
+        children:
+          - title: "Local Market Data"
+            url: /api/v1/local-market-data.html
+  
+  - title: "Resources"
+    children:
+      - title: "Roadmap"
+        url: /resources/roadmap.html

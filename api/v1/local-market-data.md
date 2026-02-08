@@ -1,6 +1,6 @@
 ---
 layout: page
-title: API Reference
+title: Local Market Data API
 ---
 
 # Local Market Data API
