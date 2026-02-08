@@ -1,9 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "minima", "~> 2.5"
-gem "jekyll-feed"
-gem "jekyll-sitemap"
+# Use github-pages gem for better compatibility
+gem "github-pages", group: :jekyll_plugins
 gem "webrick", "~> 1.8"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

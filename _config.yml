@@ -1,7 +1,7 @@
 title: Dripr Developer Docs
-description: Documentation for your Dripr.ai
-baseurl: "/dripr-docs"
-url: "https://kenneth-huebsch.github.io"
+description: Documentation for Dripr.ai
+baseurl: "/dripr-docs"  # ""
+url: "https://kenneth-huebsch.github.io/" # "http://localhost:4000"
 
 # Build settings
 markdown: kramdown
@@ -9,3 +9,32 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+# Header navigation
+header_pages:
+  - api/index.md
+  - resources/roadmap.md
+
+# Custom navigation links
+nav_links:
+  - title: "Home"
+    url: "https://www.dripr.ai"
+    external: true
+  - title: "API Reference"
+    url: "/api/"
+  - title: "Roadmap"
+    url: "/resources/roadmap.html"
+
+# Kramdown settings for Mermaid support
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+
+# Exclude problematic assets for Docker on Windows
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+  - README.md
+  - vendor/
