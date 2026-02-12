@@ -23,7 +23,7 @@ title: Roadmap
 
 ### Q3 2026
 ---
-**Quarterly Activity Reports -** Automated performance summaries for agents.
+**Welcome Email -** Sent out as soon as a new campaing is added
 
 **Price Reductions -** Call out price reductions in active listings.
 
@@ -32,3 +32,5 @@ title: Roadmap
 ### Q4 2026
 ---
 **Local Market Personalization -** Explain what local market statistics mean to the recipient.
+
+**Fixed Send Days (2) -** Send out emails on the "1st Monday of every month".
