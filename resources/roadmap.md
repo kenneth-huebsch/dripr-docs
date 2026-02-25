@@ -34,3 +34,11 @@ title: Roadmap
 **Local Market Personalization -** Explain what local market statistics mean to the recipient.
 
 **Fixed Send Days (2) -** Send out emails on the "1st Monday of every month".
+
+<br>
+
+### Backlog
+---
+**Agent Listings -** Feature an agent's listings in the active listings section
+
+**Email Edits -** Allow direct edits to the email prior to being sent
