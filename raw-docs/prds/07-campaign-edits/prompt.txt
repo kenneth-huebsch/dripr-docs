@@ -1,0 +1,9 @@
+I want you to come up with a plan for me based on the following observations.
+
+The system supports editing of email campaigns, but the functionality doesnt actually work right now because there are some bugs in the system. For example:
+
+1. If I edit a campaign, then resave it without any changes, the campaign doesn't save because it thinks its own email is a duplicate of itself. Fix this bug.
+
+2. A user should not be able to edit a campaign if there is an email that is ready to send, but hasnt been sent yet because they might think that they can change data on an email that is already written and wont be changed. To solve this we should enfoce that a user can only edit a campaign that is DORMANT. That will also protect the system from campaigns getting changed while it is progressing through the data fetching pipeline.
+
+These are two things I know of. But I want you to look at the edit functionality code and think hard about issues that I may not be considering. Ask me any clarifying questions you have. Give me any suggestions you have regarding functionality or software implementation.

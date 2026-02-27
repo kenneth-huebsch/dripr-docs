@@ -1,0 +1,15 @@
+I want you to create a plan to help me create a product requirements document. Put the content into @prd.md in the same folder as this file. Information about my system can be found in @Claude.md.
+
+I'd like to provide a pleasant user experience for new users and guide them through getting their account setup.
+
+Create a todo list on the Dashboard page above the metrics.
+
+Have a step on the todo list be "set up your signature". Include steps around uploading a square image, uploading a rectangular agency logo, updating your phone number.
+
+Have another step on the todo list be an optional step about integrating with your gmail account so that emails come directly from their account. Explain this is optional and tell them what to expect when they do this.
+
+Have another step be setup your first campaign. Explain the difference between the two campaign types.
+
+Before you write the PRD examine my frontend so that you understand the existing UI and can make a stronger PRD. Im open to suggestions from you on how to implement this.
+
+Think hard about how to create the most seamless onboarding experience for users. Ask me clarifying questions.

@@ -1,0 +1,5 @@
+Whenever a user creates a campaign for the first time, I'd like the data to be fectched and the email to be created immediately. But I don't want the email to be sent out until the following day. This gives new users a chance to trial and error a little without immediate impacts to their own clients.
+
+If wait_for_manual_approval==true, then the system should send out no earlier then the next day even if the user immediately approves the email. If the user doesn't approve the email, then it still shouldnt be sent until the user approves it even after 1 day has passed
+
+if wait_for_manual_approval==false, then the system shall wait until the next day and then automatically send out the email.

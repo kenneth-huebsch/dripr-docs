@@ -1,0 +1,5 @@
+I have been testing in the UI and have encountered the following issues that I want you to address the following issues on the Lead Details Page:
+- There should be a refresh button at the top, to the left of the edit button, similar to how one exists on the leads page. When you click the refresh button it should fetch fresh data from the API.
+- In the Campaign Information Section, the status row should show an icon along with the String text of the Status. The icons should be consistent with what is displayed on the leads page.
+- The information rows in each section should have a white background, not alternating grey/white/grey
+- The email History section should be a table that is always displayed, not a table inside a collabsible element.

@@ -1,7 +1,7 @@
-title: Dripr Developer Docs
-description: Documentation for Dripr.ai
-baseurl: "/dripr-docs"  # ""
-url: "https://kenneth-huebsch.github.io/" # "http://localhost:4000"
+title: Dripr Documentation
+description: Public docs for Dripr.ai
+baseurl: "/dripr-docs"
+url: "https://kenneth-huebsch.github.io"
 
 # Build settings
 markdown: kramdown
@@ -12,6 +12,7 @@ plugins:
 
 # Header navigation
 header_pages:
+  - user-docs/index.md
   - api/index.md
   - resources/roadmap.md
 
@@ -22,8 +23,12 @@ nav_links:
     external: true
   - title: "API Reference"
     url: "/api/"
+  - title: "User Docs"
+    url: "/user-docs/"
   - title: "Roadmap"
     url: "/resources/roadmap.html"
+  - title: "Changelog"
+    url: "/resources/changelog.html"
 
 # Kramdown settings for Mermaid support
 kramdown:

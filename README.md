@@ -1,11 +1,11 @@
 # Dripr Documentation
 
-This repository contains the documentation site for [Dripr.ai](https://www.dripr.ai/).
+This folder contains the documentation site for [Dripr.ai](https://www.dripr.ai/).
 
 ## Structure
 
 ```
-dripr-docs/
+docs/
 ├── index.md                    # Home page
 ├── _config.yml                 # Jekyll configuration
 ├── api/                        # API documentation

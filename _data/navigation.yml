@@ -7,5 +7,11 @@ main:
   - title: "API Reference"
     url: /api/
   
+  - title: "User Docs"
+    url: /user-docs/
+  
   - title: "Roadmap"
     url: /resources/roadmap.html
+  
+  - title: "Changelog"
+    url: /resources/changelog.html
