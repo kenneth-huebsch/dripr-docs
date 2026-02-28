@@ -21,7 +21,7 @@ These guides are written for busy real estate agents. No technical background ne
 
 Dripr sends monthly real estate update emails for your contacts so you stay top-of-mind.
 
-- **Home Valuation Campaign**: Use when you have the contact's property address.
-- **Market Update Campaign**: Use when you do not have an address, but you do have ZIP code.
+- **Address Newsletter**: Use when you have the contact's property address.
+- **No-Address Newsletter**: Use when you do not have an address, but you do have ZIP code.
 
 If you are brand new, start with the Getting Started guide and create 1-2 test leads first.

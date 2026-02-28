@@ -29,10 +29,13 @@ This is the simple version of how emails move from draft to sent.
 Your first email may wait before sending.  
 This gives you time to review your message.
 
-## Working-Hours Sending
+## Send Window
 
-Some accounts only send during business-hour windows.  
-If so, emails wait until that window.
+Emails only send during this window:
+- Tuesday through Thursday
+- `11:00 AM-6:00 PM ET`
+
+If an email is approved outside that window, it waits for the next eligible time.
 
 ## Monthly Schedule
 

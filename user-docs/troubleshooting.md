@@ -29,9 +29,18 @@ If nothing changes after a while, contact support and include campaign ID.
 Common causes:
 - Waiting for manual approval
 - First-email delay still active
-- Sending window not open yet
+- Sending window not open yet (Tuesday-Thursday, `11:00 AM-6:00 PM ET`)
 - Campaign disabled
 - Lead unsubscribed/bounced/spam complaint
+
+## Can't Delete a Campaign
+
+If a campaign is currently building/in progress, deletion is blocked until that step finishes.
+
+Try this:
+- Refresh and check the campaign status.
+- Wait for the building step to complete.
+- Delete after the campaign is no longer in progress.
 
 ## Older Draft Marked Expired
 

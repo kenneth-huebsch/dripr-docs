@@ -13,10 +13,10 @@ Use this page as your quick start checklist.
 - Connect Gmail if you want emails to come from your own address.
 - Check your plan so you know how many active leads you can run.
 
-## Step 2: Pick the Right Campaign Type
+## Step 2: Pick the Right Newsletter Type
 
-### Home Valuation Campaign
-Best for past clients/homeowners when you know their address.
+### Address Newsletter
+Best for past clients/homeowners when you know their property address.
 
 You need:
 - First name
@@ -24,7 +24,7 @@ You need:
 - Email
 - Property address
 
-### Market Update Campaign (No Address)
+### No-Address Newsletter
 Best for new prospects when you do not know their address.
 
 You need:
@@ -37,7 +37,7 @@ You need:
 
 - Open your Leads page.
 - Click `+ New Lead`.
-- Choose Home Valuation or Market Update.
+- Choose Address Newsletter or No-Address Newsletter.
 - Pick your monthly send day (1-28).
 - Save the campaign.
 
@@ -47,7 +47,7 @@ The first email may not send right away. It depends on:
 
 - Your approval settings
 - First-send delay rules
-- Working-hours sending rules
+- Send window rules (Tuesday-Thursday, `11:00 AM-6:00 PM ET`)
 
 You can always check progress in Lead Details and Email History.
 

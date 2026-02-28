@@ -19,8 +19,8 @@ Optional column:
 - `formatted_address`
 
 How campaign type is chosen:
-- Address filled in -> Home Valuation Campaign
-- Address blank/missing -> Market Update Campaign
+- Address filled in -> Address Newsletter
+- Address blank/missing -> No-Address Newsletter
 
 ## File Rules
 
