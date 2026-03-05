@@ -60,12 +60,24 @@ When `next_send_datetime` arrives (calculated dynamically using `calculate_next_
 - `Email.approved` = 0 (will be set based on `check_before_sending` after content is populated)
 - `Email.local_footer_content_type` = `NULL` (will be set during data fetching)
 
+**Scheduling Invariants (enforced at placeholder creation):**
+- `Email.scheduled_send_datetime` is normalized to be **forward-only** (`>= now_utc`)
+- `Email.scheduled_send_datetime` is enforced to be **strictly monotonic** (`> Campaign.last_sent_email_datetime` when present)
+- `Campaign.last_scheduled_send_date` is set from this normalized schedule (not the raw candidate)
+
 **Note**: `next_send_datetime` is not a database field - it's dynamically calculated using the `calculate_next_send_datetime()` function:
 - **First email** (`last_scheduled_send_date` is `NULL`):
   - If `fixed_send_day` equals current day (EST): Uses `creation_datetime` + `FIRST_TIME_CAMPAIGN_DELAY_HOURS`
   - If `fixed_send_day` differs from current day: Uses max(`creation_datetime` + `FIRST_TIME_CAMPAIGN_DELAY_HOURS`, next occurrence of `fixed_send_day`)
   - Working hours enforcement: When `ONLY_SEND_EMAILS_DURING_WORKING_HOURS='true'`, the calculated send time is adjusted forward to the next working hours window (11am-6pm EST) if needed
 - **Subsequent emails** (`last_scheduled_send_date` is NOT `NULL`): Uses `last_scheduled_send_date` + `every_n_months`, adjusted to the `fixed_send_day` of that month
+
+**Cooldown Re-entry Guard (DORMANT poller):**
+- If a campaign appears "ready" (`next_send_datetime <= now`) but was sent within the last 14 days, it is moved to:
+  - `Campaign.campaign_status` = `ERROR`
+  - `Campaign.email_creation_status` = `ERROR`
+  - `Campaign.error_text` = cooldown re-entry violation message
+- In this case, no placeholder email is created and no `WAITING_FOR_DATA` event is published.
 
 At this point, a `STATUS_CHANGE` event is published to SNS, which fans out to all relevant SQS queues (local market, active listings, recent sales, property valuation, intro). Each queue's consumer will process the event independently.
 
@@ -178,6 +190,8 @@ Before creating the new email, any old unapproved emails are expired:
 - Email is approved (either `check_before_sending=0` OR `Email.approved=1`)
 - First-time campaign delay has passed (if `last_sent_email_datetime is NULL`, campaign must be at least `FIRST_TIME_CAMPAIGN_DELAY_HOURS` old)
 - Campaign is enabled
+- Cooldown guard passes (must not have a send in the last 14 days)
+- Monotonic guard passes (`Email.scheduled_send_datetime` must be after `Campaign.last_sent_email_datetime` when present)
 
 When these conditions are met:
 - `Campaign.campaign_status` = `READY_TO_SEND_EMAIL`
@@ -204,7 +218,7 @@ When these conditions are met:
 
 **Note**: 
 - Email sending consumer checks working hours (11am-6pm EST) and calculates sleep duration until next window if `ONLY_SEND_EMAILS_DURING_WORKING_HOURS=true`
-- Approval and first-time delay checks are handled by the poller before the event is published, so the consumer can send immediately
+- Approval, first-time delay, cooldown, and monotonic checks are handled by pollers before the event is published, and the send consumer still performs a cooldown check as a final defense-in-depth guard
 
 ## 10. Email Delivered
 

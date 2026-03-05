@@ -9,6 +9,8 @@ title: Roadmap
 
 **Date Awareness -** Intro accounts for holidays and special occasions.
 
+**No Name newsletters -** Support sending emails to recipeients without names provided
+
 <br>
 
 ### Q2 2026

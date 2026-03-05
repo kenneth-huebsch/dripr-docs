@@ -131,9 +131,10 @@ graph TD
     *   **Polling Threads (Database):**
         *   Campaign status orchestration (transitions between campaign states):
             *   `DORMANT` → `WAITING_FOR_DATA` (when next send date arrives, calculated using fixed monthly send day)
+                *   Guardrail: campaigns that appear ready but were sent within 14 days are moved to `ERROR` (cooldown re-entry violation)
             *   `WAITING_FOR_DATA` → `WAITING_FOR_HOME_ANALYSIS` (when all data is ready)
             *   `WAITING_FOR_HOME_ANALYSIS` → `READY_TO_CREATE_EMAIL` (when home report is ready)
-            *   `READY_TO_CREATE_EMAIL` → `READY_TO_SEND_EMAIL` (when email is created, approved, and first-time delay has passed)
+            *   `READY_TO_CREATE_EMAIL` → `READY_TO_SEND_EMAIL` (when email is created, approved, first-time delay has passed, and cooldown/monotonic guards pass)
     *   **Next Send Date Calculation:** Campaigns use `fixed_send_day` (1-28) to determine when subsequent emails send. First email scheduling considers `FIRST_TIME_CAMPAIGN_DELAY_HOURS` and the relationship between campaign creation date and `fixed_send_day` (see Campaign State Machine documentation).
     *   Orchestrates data fetching from **Zillow** (RapidAPI) and **Rentcast**.
     *   Calculates local market stats (interest rate changes, price trends).
@@ -143,7 +144,7 @@ graph TD
 *   **Role:** Handles email generation and delivery.
 *   **Architecture:** Fully Event-Driven (Three Event Consumers).
 *   **Key Responsibilities:**
-    *   **Email Creation Consumer:** Listens for `STATUS_CHANGE` events (to `READY_TO_CREATE_EMAIL`) to trigger email creation. Before creating a new email, expires any old unapproved emails from the campaign. Creates the email record with `scheduled_send_datetime` (calculated via `calculate_next_send_datetime()`, which considers `fixed_send_day`, `FIRST_TIME_CAMPAIGN_DELAY_HOURS`, and whether it's the first or subsequent email) and updates `Campaign.last_scheduled_send_date`. Sets `Campaign.email_creation_status = READY`.
+    *   **Email Creation Consumer:** Listens for `STATUS_CHANGE` events (to `READY_TO_CREATE_EMAIL`) to trigger email creation. Before creating a new email, expires any old unapproved emails from the campaign. Creates/updates the email with `scheduled_send_datetime` from `calculate_next_send_datetime()` and then normalizes it with forward-only + monotonic guards (`>= now_utc`, and `> last_sent_email_datetime` when present). Updates `Campaign.last_scheduled_send_date` from the normalized value and sets `Campaign.email_creation_status = READY`.
     *   **Email Sending Consumer:** Listens for `STATUS_CHANGE` events (to `READY_TO_SEND_EMAIL`) to trigger email delivery. Respects working hours (11am-6pm EST) by calculating sleep duration until next sending window when enabled. By the time this consumer receives an event, the data_fetcher poller has already verified approval status and first-time campaign delay requirements. Marks emails as `status=COMPLETE` upon sending.
     *   **Welcome Email Consumer:** Listens for `USER_CREATED` events to trigger "Welcome Emails".
     *   **Rendering:** Compiles Handlebars templates (`.hbs`) with dynamic data.
@@ -200,6 +201,8 @@ To improve scalability and reliability, Dripr uses an **SNS + SQS Fan-Out Patter
 8.  **Email Sending Gate:** After email creation, campaigns remain in `READY_TO_CREATE_EMAIL` with `email_creation_status=READY`. A poller in `data_fetcher` (`edit_campaigns_status_that_are_ready_for_email_sending()`) checks for:
     *   Email approval (either auto-approved with `check_before_sending=0` OR manually approved with `Email.approved=1`)
     *   First-time campaign delay (campaigns with `last_sent_email_datetime=NULL` must wait `FIRST_TIME_CAMPAIGN_DELAY_HOURS` from creation)
+    *   14-day cooldown (campaigns with recent sends do not proceed)
+    *   Monotonic schedule validity (`scheduled_send_datetime` must be after `last_sent_email_datetime`)
     *   Campaign is enabled
     
     When all conditions are met, the poller transitions the campaign to `READY_TO_SEND_EMAIL` and publishes a `STATUS_CHANGE` event, triggering the email sending consumer. This prevents flooding the SQS queue with messages that aren't ready to be processed.
