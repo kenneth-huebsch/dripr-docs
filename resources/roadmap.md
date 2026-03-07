@@ -27,7 +27,7 @@ title: Roadmap
 ---
 **Quarterly Activity Reports -** Automated performance summaries for agents.
 
-**Price Reductions -** Call out price reductions in active listings.
+**Featured Listings -** Feature agent listings in the newsletter
 
 <br>
 
