@@ -5,11 +5,11 @@ title: Roadmap
 
 ### Q1 2026
 ---
-**Fixed Send Date -** Allow users to schedule campaigns for specific dates.
+**✅ Fixed Send Date -** Allow users to schedule campaigns for specific dates.
 
-**Date Awareness -** Intro accounts for holidays and special occasions.
+**✅ Date Awareness -** Intro accounts for holidays and special occasions.
 
-**No Name newsletters -** Support sending emails to recipeients without names provided
+**✅ No Name newsletters -** Support sending emails to recipeients without names provided
 
 <br>
 
