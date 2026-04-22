@@ -74,3 +74,57 @@ Automated release notes generated from merged commits.
 - added n8n creds to accounts.md
 
 [View commit](https://github.com/kenneth-huebsch/dripr/commit/8913b0f61b788bbdb314a0b0ad6c149e16fc7be4)
+
+## 2026-03-23 - `2aae97b`
+
+- working date awareness
+- [release-20260323-1702] date awareness in intros
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/2aae97bed7b8f3bc5fecfc9f0656907741ee6aa4)
+
+## 2026-04-02 - `fb863f9`
+
+- [data_fetcher-release-20260401-1728] hotfix to raise polling limit to 2000
+- [data_fetcher-release-20260401-1728] hotfix to raise polling limit to 2k
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/fb863f92524cae6d4f16b5a88d3fc236dc8d3a28)
+
+## 2026-04-10 - `eb59539`
+
+- plane edits
+- refactor complete. no testing done yet.
+- unit tests passing
+- added integration tests, but not tested yet
+- implemented multi-source-client-manager
+- created email manager package
+- added helpers for datetime conversions
+- from datetime import updates
+- refactored models.py into smaller files.
+- integration tests passing
+- requirements refactoring port update, e2e tests passing
+- todos added to backlog
+- back to port 5000
+- [release-20260409-2021] zerobounce client and package refactors
+- @kenneth-huebsch [release-20260409-2021] zerobounce client and package refactors
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/eb595390045c5a0628af3f83ebf69b05c9231c8e)
+
+## 2026-04-18 - `c0fcb4c`
+
+- fixed cron_jobs dockerfile
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/c0fcb4c1cfa457d1b95bf6565e944f3bf9fc7919)
+
+## 2026-04-20 - `5d2c84f`
+
+- tests passing
+- context cleanup
+- integration tests passing after main merge
+- unit and int tests passing after bugfix
+- plan options
+- cadance recovery fix implemented
+- backlog update
+- [release-20260419-2047] anchor campaign create times to 3am EST
+- [release-20260419-2047] anchor campaign create times to 3am EST
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/5d2c84f6b6365dc97bb965bf6577b77273619538)

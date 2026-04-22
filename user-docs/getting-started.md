@@ -38,8 +38,11 @@ You need:
 - Open your Leads page.
 - Click `+ New Lead`.
 - Choose Address Newsletter or No-Address Newsletter.
+- For address newsletters, click **Check Address** to pre-verify the property on Zillow.
 - Pick your monthly send day (1-28).
 - Save the campaign.
+
+If Check Address comes back red, see [Create Campaigns - Check Address](campaigns/create-campaigns.md#check-address-address-newsletters) for how to proceed. If you skip the check and Zillow can't find the property later, the campaign auto-switches to a No-Address Newsletter.
 
 ## Step 4: Know When the First Email Sends
 

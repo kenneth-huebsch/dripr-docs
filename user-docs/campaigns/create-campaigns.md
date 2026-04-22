@@ -33,6 +33,30 @@ Then add one:
 - `formatted_address` (address newsletter)
 - `zip_code` (no-address newsletter)
 
+## Check Address (Address Newsletters)
+
+When you enter an address, click **Check Address** to pre-verify it against Zillow before saving the campaign.
+
+You'll see one of three results:
+
+- **Green — Address verified.** The address was found on Zillow and matches what you typed.
+- **Red — Zillow doesn't have this property.** We couldn't build a home-value section for this address. Switch the campaign to a **No-Address Newsletter** (toggle at the top of the form) so we send market updates for the ZIP instead.
+- **Red — Zillow's address doesn't match.** We show you Zillow's canonical version (e.g. `1828 N Karlov Ave #2` vs `1828 N Karlov Ave`). You can either click **Apply Zillow's format** to use theirs, or switch to a **No-Address Newsletter**.
+
+Check Address is a pre-flight check, not a blocker — you can still submit the campaign even if it comes back red.
+
+## What Happens If Address Lookup Fails Later
+
+If you skip Check Address (or it passes but Zillow later can't produce the data we need for the home-value section), we **automatically switch the campaign to a No-Address Newsletter** instead of marking it as errored. The lead will appear in your dashboard as a working no-address campaign, and you'll see a log entry noting the switch.
+
+This means you rarely need to manually fix campaigns that fail property lookup — they self-recover to the no-address flow.
+
+## Unknown ZIP Codes
+
+If you enter a ZIP code we don't have market data for, we **automatically swap it to the numerically-closest ZIP in our database** at campaign creation. The campaign will send market data for that nearby ZIP. The swap is silent in the UI — no error, no prompt.
+
+This usually only matters for very new ZIPs or unusual entries. For normal US ZIPs, you won't notice a difference.
+
 ## Monthly Send Day
 
 Choose the day each monthly email should go out.

@@ -15,6 +15,23 @@ Check these first:
 - You are within your plan limit.
 - Address or ZIP matches the campaign type.
 
+Note: an unknown ZIP code no longer blocks creation. If your ZIP isn't in our database, we swap it for the numerically-closest ZIP we do have data for. See [Create Campaigns](campaigns/create-campaigns.md#unknown-zip-codes).
+
+## Check Address Came Back Red
+
+Two cases:
+
+- **"We couldn't find this property on Zillow"** — switch the campaign to a **No-Address Newsletter** (toggle on the campaign form). Market content for the ZIP will still go out.
+- **"Zillow's address doesn't match"** — click **Apply Zillow's format** to use their canonical version, or switch to a **No-Address Newsletter**.
+
+You can also submit anyway — if Zillow still can't find the property after creation, the campaign auto-switches to a No-Address Newsletter on its own.
+
+## Campaign Switched to No-Address Unexpectedly
+
+If an address-newsletter campaign shows up as a no-address newsletter, it means our post-creation Zillow lookup couldn't produce a home-value section. The campaign self-recovered rather than going to **Error**. You'll see a log line indicating the auto-switch.
+
+If you believe Zillow does have the property, double-check the address formatting, update the lead, and toggle it back to an Address Newsletter.
+
 ## Campaign Stuck or Slow
 
 Try this:
