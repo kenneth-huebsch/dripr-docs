@@ -128,3 +128,79 @@ Automated release notes generated from merged commits.
 - [release-20260419-2047] anchor campaign create times to 3am EST
 
 [View commit](https://github.com/kenneth-huebsch/dripr/commit/5d2c84f6b6365dc97bb965bf6577b77273619538)
+
+## 2026-04-22 - `db33213`
+
+- passing through e2e tests
+- [release-20260421-2239] Auto switch to no-address newsletter
+- docs updates
+- [release-20260421-2239] Auto switch to no-address newsletter
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/db332133b8db15b033068b1d478f532a010acae8)
+
+## 2026-04-22 - `abf416a`
+
+- feat: overnight agent infrastructure for autonomous Cursor CLI runs
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/abf416a9a493c6b000b8a50e076e3bc929cf67c7)
+
+## 2026-04-22 - `7ec3db5`
+
+- fix(overnight): use `agent` binary name and add --trust for headless CI
+- fix(overnight): use `agent` binary name and add --trust for headless CI
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/7ec3db5727cab1c86118aa59a05efbbed02e0705)
+
+## 2026-04-22 - `e0b53dc`
+
+- chore: gitignore .claude/worktrees/
+- feat: add authoring-overnight-tasks skill
+- feat: local-mode wrapper for the overnight agent runner
+- feat(overnight): auto-apply docs:skip label when branch omits docs/
+- feat(overnight): teach agents to keep docs/ in sync with behavior changes
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/e0b53dca4c483402023bf702ad815d18078a9238)
+
+## 2026-04-22 - `d253243`
+
+- overnight tasks
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/d2532439367106efe3966e59326770e968cbdac9)
+
+## 2026-04-22 - `d6a3d11`
+
+- overnight tasks
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/d6a3d116e89e1bbdaed738000f493e4af2e8f7d5)
+
+## 2026-04-23 - `50d6a43`
+
+- fix(overnight): don't discard work when implementer commits itself
+- fix(overnight): don't discard work when implementer commits itself
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/50d6a435f8e330951fc8bf721c4a77cb012b828b)
+
+## 2026-04-23 - `c6aa11c`
+
+- feat(overnight): cost guardrails (cron, per-call timeout, first-fail stop)
+- feat(overnight): cost guardrails — cron, per-call timeout, first-fail stop
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/c6aa11cb825f4dd0a1f4eb9963f1793285a6cd1c)
+
+## 2026-04-25 - `5ba7d47`
+
+- agent(impl): show-first-time-delay-campaign-status-in-ui
+- agent(revise): show-first-time-delay-campaign-status-in-ui
+- agent(fix-checks): show-first-time-delay-campaign-status-in-ui
+- queue cleanup, all tests pass
+- Agent/show first time delay campaign status in UI
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/5ba7d47c60c928a87d9710948a74ec0e93ec1324)
+
+## 2026-04-25 - `b9fa079`
+
+- minor documentation updates
+- [release-20260425-1548] education topics endpoint and skill
+- [release-20260425-1548] education topics endpoint and skill
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/b9fa0790b61a71fb374ff22ca0f7830ef7d23fe7)

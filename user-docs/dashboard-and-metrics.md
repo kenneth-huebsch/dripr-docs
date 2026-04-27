@@ -5,36 +5,34 @@ title: Dashboard and Metrics
 
 # Dashboard and Metrics
 
-Your Dashboard shows how your email marketing is doing.
+Your Dashboard shows whether Dripr is keeping your contacts engaged and which people may be worth a personal follow-up.
 
-## Leads
+## Dashboard Health
+
+The top row gives a quick health snapshot:
 
 - **Total Leads**: How many active leads you currently have.
-- **New Leads (30d)**: How many leads were added in the last 30 days.
+- **Lifetime Open Rate**: The percentage of sent emails that have been opened.
+- **Lifetime Unsubscribe Rate**: The percentage of sent emails that led to an unsubscribe.
+- **Lifetime Spam Rate**: The percentage of sent emails that led to a spam complaint.
 
-## This Month's Email Performance
+## Warm Contacts
 
-These numbers are based on the last 30 days:
-- Emails sent
-- Emails opened
-- Unsubscribes
-- Spam complaints
+Warm Contacts are leads with meaningful activity in the last 90 days. Dripr ranks contacts with active listing clicks first, then contacts with recent email opens.
 
-## Lifetime Email Performance
+Expand a warm contact to see the activity behind the signal:
 
-These are all-time totals:
-- Total sent
-- Total opened
-- Total unsubscribes
-- Total spam complaints
+- Active listings they clicked, including the listing address, price, and link.
+- Recent emails they opened.
+- The latest activity timestamp.
 
 ## Quick Tips
 
-- Low opens -> test better subject lines.
-- High unsubscribes -> send less often or improve who you send to.
-- Any spam complaints -> clean your list and review your email tone/content.
+- Active listing clicks are stronger signals than opens because the contact looked at market inventory.
+- Use Warm Contacts as a cue to personally call, text, or email outside Dripr.
+- High unsubscribes or spam complaints may mean your list needs cleaning or your audience is not a good fit.
 
 ## Good to Know
 
-- "30 days" is a rolling window (not a calendar month).
+- "90 days" is a rolling window, not a calendar quarter.
 - Numbers may update after delivery/open events come in.
