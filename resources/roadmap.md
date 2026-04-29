@@ -17,9 +17,9 @@ title: Roadmap
 ---
 **Upcoming Events -** Highlight upcoming local events in the area.
 
-**Recipient Activity Dashboard -** Track recipient engagement metrics to identify active leads.
+**✅ Recipient Activity Dashboard -** Track recipient engagement metrics to identify active leads.
 
-**Link Tracking -** Show the agents when recipients click on a link
+**✅ Link Tracking -** Show the agents when recipients click on a link
 
 <br>
 

@@ -16,7 +16,7 @@ Your file must include these columns:
 - `zip_code`
 
 Optional column:
-- `formatted_address`
+- `address`
 
 How campaign type is chosen:
 - Address filled in -> Address Newsletter

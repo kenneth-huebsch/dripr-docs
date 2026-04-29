@@ -56,12 +56,12 @@ You can always check progress in Lead Details and Email History.
 
 ## Step 5: Check Results on Dashboard
 
-Watch these numbers:
-- Active leads
-- Emails sent
-- Opens
-- Unsubscribes
-- Spam complaints
+Your Dashboard has two parts:
+
+- **Dashboard Health** — top row of four cards: Total Leads, Lifetime Open Rate, Lifetime Unsubscribe Rate, Lifetime Spam Rate.
+- **Warm Leads** — a table of contacts who opened emails or clicked listings in the last 90 days. Use this to decide who to follow up with personally.
+
+See [Dashboard and Metrics](dashboard-and-metrics.html) for details.
 
 ## Easy Best Practices
 

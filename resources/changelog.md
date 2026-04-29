@@ -204,3 +204,21 @@ Automated release notes generated from merged commits.
 - [release-20260425-1548] education topics endpoint and skill
 
 [View commit](https://github.com/kenneth-huebsch/dripr/commit/b9fa0790b61a71fb374ff22ca0f7830ef7d23fe7)
+
+## 2026-04-27 - `0b14595`
+
+- tests passing through e2e
+- working prior to including recent sales
+- [release-20260427-1029] warm contacts dashboard
+- [release-20260427-1029] warm contacts dashboard
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/0b14595d669bff10547547505635d2797b67b5fa)
+
+## 2026-04-28 - `4c41c24`
+
+- agent(impl): apply-underscore-convention-to-worker-services
+- agent(revise): apply-underscore-convention-to-worker-services
+- agent(fix-checks): apply-underscore-convention-to-worker-services
+- Agent/apply underscore convention to worker services
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/4c41c24a9606018abaed2f625004226220f08c45)

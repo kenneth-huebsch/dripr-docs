@@ -76,8 +76,9 @@ Fix the source file and re-upload.
 
 ## Metrics Look Off
 
-- Dashboard uses rolling 30-day and lifetime counters.
-- Delivery and engagement events can arrive after initial send.
+- Dashboard Health uses lifetime rates (open, unsubscribe, spam).
+- Warm Leads uses a rolling 90-day window for opens and listing clicks.
+- Delivery, open, and click events can arrive after the initial send, so numbers may shift.
 - Refresh to fetch latest aggregates.
 
 ## When to Contact Support
