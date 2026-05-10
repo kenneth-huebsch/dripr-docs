@@ -222,3 +222,133 @@ Automated release notes generated from merged commits.
 - Agent/apply underscore convention to worker services
 
 [View commit](https://github.com/kenneth-huebsch/dripr/commit/4c41c24a9606018abaed2f625004226220f08c45)
+
+## 2026-04-29 - `0e46970`
+
+- docs updates for dashboard
+- [release-20260428-2157] bulk upload csv example
+- [release-20260428-2157] bulk upload csv example
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/0e46970b378c5a01b1107e00a67bd518f7c63554)
+
+## 2026-04-29 - `0935b5e`
+
+- Revert "overnight: fail standardize-api-gateway-package-entrypoint"
+- Revert "overnight: claim standardize-api-gateway-package-entrypoint"
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/0935b5e8dd773177f28b5b18fbcc29c4981d54f8)
+
+## 2026-04-29 - `c801fcd`
+
+- fix(overnight): discard uncommitted work before bookkeeping commits
+- overnight: drop secret materialization in favor of committed env file
+- fix(overnight): discard dirty work + drop redundant secret materialize
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/c801fcd948badc91f118952b7d32a61634b4e930)
+
+## 2026-04-29 - `be9d5bf`
+
+- agent(impl): add-type-hints-shared-email-sending-client
+- agent(revise): add-type-hints-shared-email-sending-client
+- agent(fix-checks): add-type-hints-shared-email-sending-client
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/be9d5bfd8fc0a987213c7f31246159fad283d65f)
+
+## 2026-04-29 - `52f9282`
+
+- agent(impl): add-type-hints-shared-db
+- agent(revise): add-type-hints-shared-db
+- agent(fix-checks): add-type-hints-shared-db
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/52f92827b01661e78cd94ab27aefd68aa1bf29ab)
+
+## 2026-04-29 - `ce81c96`
+
+- fix(overnight): cap to one task per run, ignore .failure.md, fail loud on rejected push
+- chore(overnight): relocate stray .failure.md files out of queue/ and done/
+- fix(overnight): cap to 1 task/run, skip .failure.md, fail loud on bad push
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/ce81c9690d9e417a42b30f43a457fae890429548)
+
+## 2026-05-01 - `6c935cb`
+
+- clear dev sqs queues between runs
+- allow testing on 29 30 and 31 of month
+- code review and internal docs
+- [release-20260430-2347] Allow testing during 29, 30, 31 of month
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/6c935cb535d764aa92591e7b9a8df121b10a85fd)
+
+## 2026-05-01 - `6d2dceb`
+
+- added overnight tasks
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/6d2dceb0075bd7e1b60d63cfc0de5c40a8670aa5)
+
+## 2026-05-03 - `39c89fb`
+
+- fix campaign cadence anchor timezone
+- skipped some integration tests for speed
+- Bugfix fixed_send_day to last_scheduled_send_date utc/et issue
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/39c89fba3fa48645ad6ba56dda389b9cc1794586)
+
+## 2026-05-03 - `165f652`
+
+- unit and int tests passing
+- docs: add local market deploy idle check
+- Fix local market data freshness snapshotting
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/165f6521e6bd4f6cba2fa396e5ea8fa149d2e6b9)
+
+## 2026-05-05 - `606cdb3`
+
+- agent(impl): standardize-bedrock-prompt-templates
+- agent(revise): standardize-bedrock-prompt-templates
+- agent(fix-checks): standardize-bedrock-prompt-templates
+- agent: standardize-bedrock-prompt-templates
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/606cdb344888c22a615e75278b80a13c1d2e9b26)
+
+## 2026-05-05 - `947abf0`
+
+- bug fix implementation
+- testing and new envrionment spinner upper
+- fix spin up environment test path
+- Fix home report prompt for missing purchase date
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/947abf0cb1ad3e0c0c5554170edb19b9c73f7be8)
+
+## 2026-05-05 - `73796c8`
+
+- [release-20260505-1852] deployed the past weeks worth
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/73796c830fbb568ca7c96ae4dc2ecef4c56e4b3b)
+
+## 2026-05-06 - `7955c2b`
+
+- recover from failed overnight
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/7955c2b6e37edce55cd2a1b531fa2ffa75abca36)
+
+## 2026-05-07 - `b2ce5c3`
+
+- agent(impl): add-type-hints-shared-top-level
+- agent(revise): add-type-hints-shared-top-level
+- agent(fix-checks): add-type-hints-shared-top-level
+- agent: add-type-hints-shared-top-level
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/b2ce5c3c6bb0f5cf89a1eefee71c0f2b43d1ff82)
+
+## 2026-05-07 - `d9e7c4f`
+
+- docs: keep Dripr skills app-specific
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/d9e7c4fb06c12ef0e0a74e578e32cdf6fb70b6d6)
+
+## 2026-05-08 - `e1bd7a2`
+
+- [release-20260507-2159] phone number formatting
+- [release-20260507-2159] phone number formatting
+
+[View commit](https://github.com/kenneth-huebsch/dripr/commit/e1bd7a2e5db89fa6795ad912248c7d621d1f79b6)

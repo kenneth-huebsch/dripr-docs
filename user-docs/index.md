@@ -24,4 +24,6 @@ Dripr sends monthly real estate update emails for your contacts so you stay top-
 - **Address Newsletter**: Use when you have the contact's property address.
 - **No-Address Newsletter**: Use when you do not have an address, but you do have ZIP code.
 
+Campaign emails only send Tuesday-Thursday, `11:00 AM-6:00 PM ET`.
+
 If you are brand new, start with the Getting Started guide and create 1-2 test leads first.

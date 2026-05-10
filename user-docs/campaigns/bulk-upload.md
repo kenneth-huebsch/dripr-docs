@@ -22,6 +22,8 @@ How campaign type is chosen:
 - Address filled in -> Address Newsletter
 - Address blank/missing -> No-Address Newsletter
 
+Uploaded leads follow the same campaign timing rules as leads created one at a time: emails only send Tuesday-Thursday, `11:00 AM-6:00 PM ET`.
+
 ## File Rules
 
 - File type: `.csv`
